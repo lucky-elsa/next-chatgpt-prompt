@@ -41,9 +41,10 @@ export default function Home() {
 
           <div className="flex flex-col">
             <textarea
+              readOnly
               value={getResult}
               onChange={handleChangeGetResult}
-              className="border-[1px] border-[#787878] rounded-[7px] h-[35rem] w-[20rem] p-[15px] text-[16px]"
+              className="border-[1px] border-[#161515] rounded-[7px] h-[35rem] w-[20rem] p-[15px] text-[16px]"
             ></textarea>
             <button
               onClick={getResultFunction}
@@ -54,8 +55,9 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col">
-            <textarea 
-               value={result}
+            <textarea
+              readOnly
+              value={result}
               className="border-[1px] border-[#787878] rounded-[7px] h-[35rem] w-[20rem] p-[15px] text-[16px]"
             ></textarea>
           </div>
